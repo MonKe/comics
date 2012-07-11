@@ -4,13 +4,13 @@ title:  blog
 ---
 {% for post in paginator.posts %}
 <h2>[{{ post.title }}.]</h2> {% endfor %} {% if paginator.previous_page %}
-<a class="prev" href="comics/{% unless paginator.previous_page == 1 %}page{{ paginator.previous_page }}{% endunless %}">
+<a class="prev" href="/comics/{% unless paginator.previous_page == 1 %}page{{ paginator.previous_page }}{% endunless %}">
    &laquo; <span class="long">précédent</span>
 </a> {% endif %} {% if paginator.next_page %}
-<a class="next" href="comics/page{{ paginator.next_page }}">
+<a class="next" href="/comics/page{{ paginator.next_page }}">
    <span class="long">suivant</span> &raquo;
 </a> {% endif %} {% for post in paginator.posts %} {% if post.left %}
-<img src="comics/img/{{ post.dir }}/{{ post.left }}.png"
+<img src="/comics/img/{{ post.dir }}/{{ post.left }}.png"
      alt="{{ post.left }}" class="left" /> {% endif %} {% if post.right %}
-<img src="comics/img/{{ post.dir }}/{{ post.right }}.png"
+<img src="/comics/img/{{ post.dir }}/{{ post.right }}.png"
      alt="{{ post.right }}" class="right" /> {% endif %} {% endfor %}
