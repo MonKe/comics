@@ -7,7 +7,7 @@ In the future you will be getting more interesting features:
 
 * disqus comments (maybe)
 
-* hopefully, I'm gonna switch to [Frankie] (https//github.com/MonKe/frankie),
+* hopefully, I'm gonna switch to [Frankie] (https://github.com/MonKe/frankie),
 as soon as it becomes ... stable.
 
 [watch the result] (http://monke.github.com/comics)
