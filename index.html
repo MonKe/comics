@@ -3,7 +3,7 @@ layout: page
 title:  blog
 ---
 <section class="page"> {% for post in paginator.posts %}
-   <h2>[{{ post.title }}.]</h2> {% endfor %} {% if paginator.previous_page %}
+   {{ post.content }} {% endfor %} {% if paginator.previous_page %}
    <a class="prev" href="/{{ site.url }}{% unless paginator.previous_page == 1 %}page{{ paginator.previous_page }}{% endunless %}">
       &laquo; <span class="long">précédent</span>
    </a> {% endif %} {% if paginator.next_page %}
