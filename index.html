@@ -1,10 +1,13 @@
 ---
 layout: page
+notice: |
+   Hello world, it was time to go back and draw, so, welcome.
 ---
-<section class="page"> {% if paginator.previous_page %}
+<section class="page"> {% unless paginator.previous_page %}
+   {{ page.notice | markdownify }} {% else %}
    <a class="prev" href="/{{ site.url }}{% unless paginator.previous_page == 1 %}page{{ paginator.previous_page }}{% endunless %}">
       &laquo; <span class="long">précédent</span>
-   </a> {% endif %} {% if paginator.next_page %}
+   </a> {% endunless %} {% if paginator.next_page %}
    <a class="next" href="/{{ site.url }}page{{ paginator.next_page }}">
       <span class="long">suivant</span> &raquo;
    </a> {% endif %} {% for post in paginator.posts %} {% if post.center %}
