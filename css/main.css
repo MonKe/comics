@@ -4,7 +4,11 @@ body{
    font:14px/20px monospace;
 }
 a{
+   color:#bbb;
+}
+a:hover, a:focus{
    color:#fff;
+   outline:none;
 }
 h2{
    font-weight:normal;
@@ -20,6 +24,9 @@ ul{
 a.btn{
    background:#555;
    color:#000;
+}
+a.btn:hover, a.btn:focus{
+   background:#999;
 }
 p.about{
    color:#555;
