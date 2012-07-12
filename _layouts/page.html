@@ -2,15 +2,12 @@
 <html lang="en">
    <head>
 	   <meta charset="UTF-8"/>
-	   <title>[blog.]</title>
+	   <title>homemade drawings</title>
 	   <link rel="stylesheet" type="text/css" href="/{{ site.url }}css/main.css" media="all"/>
 	   <link rel="stylesheet" type="text/css" href="/{{ site.url }}css/pager.css" media="all"/>
    </head>
    <body>
-      <p class="about">
-         all these pics belong to MonKe, that is, myself. don't steal or I'll
-         bite you.
-      </p>
+      {% include about.html %}
       {{ content }}
    </body>
 </html>

@@ -1,9 +1,7 @@
 ---
 layout: post
-left:   kaki scout pride
-right:  yajas
+center: kaki scout pride
 ---
-I decided that it was time to go back and draw. It's been so long since I had a
-blog, I missed the little people drawing themselves out of boredom.
-
-Welcome back.
+Moonlight Kingdom was an awesome movie. If we strip it of its kitsch-60s's
+context, almost like Big Fish, not being able to tell truth and lies apart
+anymore. And those were such pretty lies.

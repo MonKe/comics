@@ -1,17 +1,19 @@
 ---
 layout: page
-title:  blog
 ---
-<section class="page"> {% for post in paginator.posts %}
-   {{ post.content }} {% endfor %} {% if paginator.previous_page %}
+<section class="page"> {% if paginator.previous_page %}
    <a class="prev" href="/{{ site.url }}{% unless paginator.previous_page == 1 %}page{{ paginator.previous_page }}{% endunless %}">
       &laquo; <span class="long">précédent</span>
    </a> {% endif %} {% if paginator.next_page %}
    <a class="next" href="/{{ site.url }}page{{ paginator.next_page }}">
       <span class="long">suivant</span> &raquo;
-   </a> {% endif %} {% for post in paginator.posts %} {% if post.left %}
+   </a> {% endif %} {% for post in paginator.posts %} {% if post.center %}
+   <img src="/{{ site.url }}{{ post.date | date: '%Y/%m/%d' }}/{{ post.center }}.png"
+        alt="{{ post.left }}" class="center" /> {% else %} {% if post.left %}
    <img src="/{{ site.url }}{{ post.date | date: '%Y/%m/%d' }}/{{ post.left }}.png"
         alt="{{ post.left }}" class="left" /> {% endif %} {% if post.right %}
    <img src="/{{ site.url }}{{ post.date | date: '%Y/%m/%d' }}/{{ post.right }}.png"
-        alt="{{ post.right }}" class="right" /> {% endif %} {% endfor %}
+        alt="{{ post.right }}" class="right" /> {% endif %} {% endif %}
+   {{ post.date | date: '%Y/%m/%d' }}
+   {{ post.content }} {% endfor %}
 </section>
