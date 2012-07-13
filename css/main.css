@@ -4,13 +4,34 @@ body{
    font:14px/20px monospace;
 }
 a{
+   color:#bbb;
+}
+a:hover, a:focus{
    color:#fff;
+   outline:none;
 }
 h2{
    font-weight:normal;
    padding-top:1em;
 }
+li p{
+   color:#aaa;
+}
+ul{
+   list-style-type:square;
+   color:#555;
+}
+a.btn{
+   background:#555;
+   color:#000;
+}
+a.btn:hover, a.btn:focus{
+   background:#999;
+}
 p.about{
    color:#555;
    text-align:center;
+}
+#disqus_thread{
+   margin-top:50px;
 }

@@ -26,7 +26,7 @@ section.page a{
       width:1000px;
       height:758px;
    }
-   section.page a, section.page img{
+   section.page a, section.page img.left, section.page img.right{
       position:absolute;
    }
    section.page a{
@@ -39,6 +39,9 @@ section.page a{
    }
    section.page .next{
       right:-80px;
+   }
+   section.page img.center{
+      margin:auto;
    }
    section.page img.right{
       right:0;
