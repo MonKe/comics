@@ -18,5 +18,12 @@ notice: |
    <img src="/{{ site.url }}{{ post.date | date: '%Y/%m/%d' }}/{{ post.right }}.png"
         alt="{{ post.right }}" class="right" /> {% endif %} {% endif %}
    {{ post.date | date: '%Y/%m/%d' }}
-   {{ post.content }} {% endfor %}
+   {{ post.content }}
+   <div id="disqus_thread"></div>
+   <script type="text/javascript">
+      var disqus_identifier = "{{ post.id }}2";
+      var disqus_url = "http://monke.github.com/comics{{ post.id }}.html";
+      var disqus_title = "{{ post.title }}";
+   </script>
+   {% endfor %}
 </section>

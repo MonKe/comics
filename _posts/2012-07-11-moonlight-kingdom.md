@@ -1,5 +1,6 @@
 ---
 layout: post
+title:  Kaki scout pride
 center: kaki scout pride
 ---
 Moonlight Kingdom was an awesome movie. If we strip it of its kitsch-60s's

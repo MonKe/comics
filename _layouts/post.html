@@ -1,0 +1,22 @@
+---
+layout: page
+---
+<section class="page"> 
+   <a href="/{{ site.url }}">
+      &laquo; <span class="long">home</span>
+   </a> {% if page.center %}
+   <img src="{{ page.center }}.png"
+        alt="{{ page.left }}" class="center" /> {% else %} {% if page.left %}
+   <img src="{{ page.left }}.png"
+        alt="{{ page.left }}" class="left" /> {% endif %} {% if page.right %}
+   <img src="{{ page.right }}.png"
+        alt="{{ page.right }}" class="right" /> {% endif %} {% endif %}
+   {{ page.date | date: '%Y/%m/%d' }}
+   {{ page.content }}
+   <div id="disqus_thread"></div>
+   <script type="text/javascript">
+      var disqus_identifier = "{{ page.id }}2";
+      var disqus_url = "http://monke.github.com/comics{{ page.id }}.html";
+      var disqus_title = "{{ page.title }}";
+   </script>
+</section>
